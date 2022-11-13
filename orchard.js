@@ -31,11 +31,6 @@ const fujiAcres = [2, 3, 3, 2, 2, 2, 1]
 const galaAcres = [5, 2, 4, 3, 6, 2, 4]
 const pinkAcres = [1, 5, 4, 2, 1, 5, 4]
 
-const fujiPrice = .89 
-const galaPrice = .64
-const pinkPrice = .55
-
-
 
 // PROBLEM 1
 
@@ -206,20 +201,27 @@ let totalgTons = 0
 let totalpTons = 0 
 
 for (let i = 0; i < 7; i++) {
-    totalTons += fujiTons[i] 
+    totalfTons += fujiTons[i] 
 }
 
 for (let i = 0; i < 7; i++) {
-    totalTons += galaTons[i]
+    totalgTons += galaTons[i]
 }
     
+
 for (let i = 0; i < 7; i++) {  
-    totalTons += pinkTons[i]
+    totalpTons += pinkTons[i]
 }
 //adds up all of the tons together for each apple type
-console.log
 
-//not finsihed!!
+let totalFpound = totalfTons * 2000
+let totalGpound = totalgTons * 2000
+let totalPpound = totalpTons * 2000
+
+//multiplies the tons by the amount of pounds in a ton to get the pound amount per apple. 
+
+console.log(totalFpound, totalGpound, totalPpound)
+console.log("======================")
 
 
 // PROBLEM 6
@@ -236,18 +238,23 @@ console.log
 
     Log each of the profits to the 
     console. 
+
 */
+
+const fujiPrice = .89 
+const galaPrice = .64
+const pinkPrice = .55
 
 // CODE HERE
 
-// let fujiProfit =
-// let galaProfit =
-// let pinkProfit =
 
+let fujiProfit = fujiPrice * totalFpound
+let galaProfit = galaPrice * totalGpound
+let pinkProfit = pinkPrice * totalPpound
 
+console.log(`$${fujiProfit}, $${galaProfit}, $${pinkProfit}`)
 
-
-
+console.log("======================")
 
 // PROBLEM 7
 
@@ -260,3 +267,8 @@ console.log
 */
 
 // CODE HERE
+
+let totalProfit = fujiProfit + galaProfit + pinkProfit 
+console.log(`$${totalProfit}`)
+
+//adding all the profits from each type of apple together to get the total profit.
