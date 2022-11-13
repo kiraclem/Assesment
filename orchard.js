@@ -72,6 +72,7 @@ console.log("======================")
 // CODE HERE
 
 averageDailyAcres = totalAcres / 7
+
 //We are taking the total acre amount and dividing it by how many days there are.
 //and setting it equal to our average daily
 
